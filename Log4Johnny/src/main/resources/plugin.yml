@@ -1,0 +1,14 @@
+name: GoofyServer
+version: 1.0
+author: John Pertell
+main: log4johnny.goofyserver.GoofyServer
+
+commands:
+  goof:
+    description: A goofy chat command
+    usage: /goof <message>
+    executor: log4johnny.goofyserver.CommandGoofy
+  changemotd:
+    description: A command to change the server's motd
+    usage: /changemotd <value>
+    executor: log4johnny.goofyserver.CommandMotd
